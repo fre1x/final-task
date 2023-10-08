@@ -1,0 +1,38 @@
+/* styles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.navbar {
+  background-color: #007bff;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff;
+}
+
+.display-4 {
+  color: #28a745;
+}
+
+.img-fluid {
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #007bff;
+}
+
+/* Додайте інші стилі за власним смаком */
