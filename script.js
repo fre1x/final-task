@@ -1,7 +1,6 @@
-// script.js
 
 $(document).ready(function(){
-    // Плавна прокрутка при кліці на посилання навігації
+
     $(".navbar a, .btn").on('click', function(event) {
       if (this.hash !== "") {
         event.preventDefault();
@@ -15,7 +14,6 @@ $(document).ready(function(){
       }
     });
   
-    // Додайте більше анімацій тут
     $("#home").fadeIn(1000);
     $("#gallery").slideDown(1000);
     $("#contacts").fadeIn(1000);

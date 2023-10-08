@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Природа захоплює</title>
-  <!-- Підключення Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
   <style>
@@ -16,45 +15,39 @@
       padding: 0;
     }
     .navbar {
-      background-color: #555069; /* Змінено фоновий колір навбару на темно-сірий */
+      background-color: #555069;
     }
 
     .navbar-brand, .nav-link {
-      color: #313131 !important; /* Змінено колір тексту навбару на білий */
+      color: #313131 !important;
     }
 
-    /* Заголовок сторінки */
     .display-4, h1, h2, h4 {
       font-weight: bold;
       margin-bottom: 20px;
-      color: #61dafb; /* Змінено колір заголовків на світло-синій */
+      color: #61dafb;
     }
 
-    /* Заголовок контактів */
     #contacts h2 {
       font-weight: bold;
       margin-bottom: 20px;
       color: #61dafb;
     }
 
-    /* Текст в основному контенті */
     #gallery p, #nature-info p, #contacts p {
       line-height: 1.6;
-      font-size: 18px; /* Збільшено розмір тексту */
+      font-size: 18px;
     }
 
-    /* Адреса в контактах */
     #contacts address {
       font-style: normal;
     }
 
-    /* Посилання в контактах */
     #contacts a {
       font-weight: bold;
       color: #61dafb;
     }
 
-    /* Змінено стилі кнопки "Детальніше" */
     .btn-primary {
       background-color: #61dafb;
       border-color: #61dafb;
@@ -65,17 +58,15 @@
       border-color: #45a8f5;
     }
 
-    /* Змінено стилі для форми контактів */
     form {
-      background-color: #343a40; /* Змінено фоновий колір форми на темно-сірий */
+      background-color: #343a40;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    /* Змінено стилі для вводу та кнопки у формі контактів */
     .form-control {
-      background-color: #454d55; /* Змінено фоновий колір полів вводу на темно-сірий */
+      background-color: #454d55;
       color: #fff;
       border-color: #61dafb;
     }
@@ -94,7 +85,6 @@
 </head>
 <body>
 
-  <!-- Навігаційний бар Bootstrap -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Природа</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -115,13 +105,11 @@
     </div>
   </nav>
 
-  <!-- Заголовок сторінки -->
   <div id="home" class="container mt-5 text-center">
     <h1 class="display-4">Ласкаво просимо до світу природи</h1>
     <p class="lead">Відкрийте для себе красу та різноманіття навколишнього світу.</p>
   </div>
 
-  <!-- Основний контент сторінки -->
   <div id="gallery" class="container my-5">
     <div class="row">
       <div class="col-md-6">
@@ -143,7 +131,6 @@
     </div>
   </div>
 
-<!-- Додатковий контент -->
 <div id="more-content" class="container my-5">
   <div class="row">
     <div class="col-md-12 text-center">
@@ -153,7 +140,6 @@
   </div>
 </div>
 
-<!-- Ще одна картинка -->
 <div class="container my-5">
   <div class="row">
     <div class="col-md-12 text-center">
@@ -162,7 +148,6 @@
     </div>
   </div>
 </div>
-  <!-- Секція з інформацією про природу -->
   <div id="nature-info" class="container mt-5">
     <h2 class="text-center mb-4">Інформація про природу</h2>
     <div class="row">
@@ -181,7 +166,6 @@
     </div>
   </div>
 
-  <!-- Секція з контактами -->
   <div id="contacts" class="container mt-5">
     <h2 class="text-center mb-4"><a href="contacts.html">Наші контакти</a></h2>
     <div class="row">
@@ -201,14 +185,12 @@
     </div>
   </div>
 
-  <!-- Підключення Bootstrap JS та власного JS для анімацій -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
   <script>
   $(document).ready(function(){
-    // Плавна прокрутка при кліці на посилання навігації
     $(".navbar a, .btn").on('click', function(event) {
       if (this.hash !== "") {
         event.preventDefault();
@@ -222,17 +204,14 @@
       }
     });
   
-    // Додайте більше анімацій тут
     $("#home").fadeIn(1000);
     $("#gallery").slideDown(1000);
     $("#contacts").fadeIn(1000);
   });
   
   </script>
-  <!-- Скрипти та анімації -->
   <script>
     $(document).ready(function(){
-      // Плавна прокрутка при кліці на посилання навігації
       $(".navbar a, .btn").on('click', function(event) {
         if (this.hash !== "") {
           event.preventDefault();
@@ -246,7 +225,6 @@
         }
       });
     
-      // Додайте більше анімацій тут
       $("#home").fadeIn(1000);
       $("#gallery").slideDown(1000);
       $("#contacts").fadeIn(1000);
@@ -255,7 +233,6 @@
 
 <script>
   $(document).ready(function(){
-    // Плавна прокрутка при кліці на посилання навігації
     $(".navbar a, .btn").on('click', function(event) {
       if (this.hash !== "") {
         event.preventDefault();
@@ -269,14 +246,12 @@
       }
     });
 
-    // Додайте більше анімацій тут
     $("#home").fadeIn(1000);
     $("#gallery").slideDown(1000);
     $("#contacts").fadeIn(1000);
   });
 </script>
 
-<!-- Надпис "Всі права захищені © 2023. Розроблено Artem Mazur" -->
 <footer class="container-fluid text-center mt-5">
   <p>Всі права захищені © 2023. Розроблено <span class="text-info">Artem Mazur</span></p>
 </footer>
